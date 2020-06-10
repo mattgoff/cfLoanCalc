@@ -12,11 +12,11 @@ namespace cf_loan_app.Pages
     {
 
         [BindProperty]
-        public double LoanAmount { get; set; }
+        public double LoanAmount { get; set; } = 15000;
         [BindProperty]
-        public double LoanTermLength { get; set; }
+        public double LoanTermLength { get; set; } = 24;
         [BindProperty]
-        public double LoanInterestRate { get; set; }
+        public double LoanInterestRate { get; set; } = 3.75;
 
         public IEnumerable<MonthData> LoanSchedule { get; set; }
         public class MonthData

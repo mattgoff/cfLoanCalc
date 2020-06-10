@@ -18,15 +18,15 @@
             <form method="POST">
                 <label class="labelMargins">Loan Amount: </label>
                 <br />
-                <input asp-for="LoanAmount" value=15000>
+                <input asp-for="LoanAmount" value=@Model.LoanAmount>
                 <br />
                 <label class="labelMargins">Term Length(months): </label>
                 <br />
-                <input asp-for="LoanTermLength" value=24>
+                <input asp-for="LoanTermLength" value=@Model.LoanTermLength>
                 <br />
                 <label class="labelMargins">Interest Rate: </label>
                 <br />
-                <input asp-for="LoanInterestRate" value=3.99>
+                <input asp-for="LoanInterestRate" value=@Model.LoanInterestRate>
                 <input type="submit">
                 <br />
                 <br />
