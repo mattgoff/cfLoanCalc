@@ -41,7 +41,7 @@ namespace cf_loan_app.Pages
 
             double MonthlyInterestRate = (LoanInterestRate / 100) / 12;
 
-            double MonthlyPaymentAmount = Math.Round(LoanAmount * ( MonthlyInterestRate + ( MonthlyInterestRate / ( Math.Pow((1 + MonthlyInterestRate), LoanTermLength) -1 ) ) ), 2);
+            double MonthlyPaymentAmount = LoanAmount * ( MonthlyInterestRate + ( MonthlyInterestRate / ( Math.Pow((1 + MonthlyInterestRate), LoanTermLength) -1 ) ) );
 
             double CalculatedPaymentsTotal = ((LoanInterestRate / 1200) * LoanAmount * LoanTermLength) / (1 - Math.Pow((1 + LoanInterestRate / 1200), LoanTermLength * -1));
 
